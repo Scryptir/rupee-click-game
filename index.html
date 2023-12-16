@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--
+            Name: Thomas Mielke
+            Class: TECH 273
+            Date: 02DEC2023
+            Proj: Final Project Gamw
+            
+        -->
+        <title>Zelda Rupee Game</title>
+        <link rel="stylesheet" href="./css/style.css"> <!-- Link to the external style sheet -->
+    </head>
+
+    <body>
+        <div class="flex-container"> <!-- flex container for the main body of the page -->
+        <h1>Zelda Rupee Game</h1>
+        <div class="game-flex-container"> <!-- game flex container to space the remaining turns, gameboard, and scoreboard -->
+            <div id="remaining-turns"> <!-- empty div that will be populated with the remaining turns when game starts -->
+            </div> <!-- /remaining-turns -->
+            <div class="gameboard"> <!-- grid container that holds the game spaces that the rupee with jump around when the game runs -->
+                <div class="game-space empty" id="space-1"></div>
+                <div class="game-space empty" id="space-2"></div>
+                <div class="game-space empty" id="space-3"></div>
+                <div class="game-space empty" id="space-4"></div>
+                <div class="game-space empty" id="space-5"></div>
+                <div class="game-space empty" id="space-6"></div>
+                <div class="game-space empty" id="space-7"></div>
+                <div class="game-space empty" id="space-8"></div>
+                <div class="game-space empty" id="space-9"></div>
+                <div class="game-space empty" id="space-10"></div>
+                <div class="game-space empty" id="space-11"></div>
+                <div class="game-space empty" id="space-12"></div>
+                <div class="game-space empty" id="space-13"></div>
+                <div class="game-space empty" id="space-14"></div>
+                <div class="game-space empty" id="space-15"></div>
+                <div class="game-space empty" id="space-16"></div>
+            </div>
+            <div id="scoreboard"> <!-- empty div that will be populated with the current score when game starts -->
+            </div> <!-- /scoreboard -->
+            </div> <!-- /game-flex-container -->
+            
+            <div id="game-button"> <!-- div that holds the button that changes to a reset button after the game starts -->
+                <button onClick="rupeeGame()">Play Game!</button> <!-- button that starts the function that defines the game -->
+            </div> <!-- /game-button -->
+        </div> <!-- /flex-container -->
+        <!-- <script src="../js/gamescript.js"></script> -->
+        <script src="./js/script.js"></script> <!-- links to the external JavaScript, allows the nav button to function -->
+    </body>
+</html>

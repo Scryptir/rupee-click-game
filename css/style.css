@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+/*******************************/
+/*
+		Name:  Thomas Mielke
+		Class:  TECH 273
+        Date: 02DEC2023
+        Proj:   Final Project Game
+*/
+/*******************************/
+
+/* ELEMENTS */
+img {
+    height: 17vh;
+}
+
+/* CONTAINER */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gameboard {
+    display: grid;
+    height: 70vh;
+    width: 70vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+/* SELECTORS */
+.game-space {
+    border: 2px solid black;
+    background-color: ghostwhite;
+}
+
+.game-flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-end;
+}
