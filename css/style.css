@@ -1,17 +1,50 @@
 @charset "UTF-8";
-/* CSS Document */
-/*******************************/
-/*
-		Name:  Thomas Mielke
-		Class:  TECH 273
-        Date: 02DEC2023
-        Proj:   Final Project Game
-*/
-/*******************************/
+
+@font-face { 
+    src: url(../fonts/Haystack.otf);
+    font-family: "Heystack";
+  } 
+
+  @font-face { 
+    src: url(../fonts/BodoniflfRoman.ttf);
+    font-family: "BodonifIfRoman";
+  } 
+
+  @font-face { 
+    src: url(../fonts/RusillaSerif.otf);
+    font-family: "RusillaSerif";
+  } 
 
 /* ELEMENTS */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(74,186,145);
+}
+
+button {
+    font-family: "BodonifIfRoman";
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+	box-shadow: 0 0.05rem 0.1rem gray;
+    border: none;
+    background-color: ghostwhite;
+}
+
 img {
     height: 17vh;
+}
+
+h1 {
+    font-family: "RusillaSerif";
+    font-size: 6rem;
+    text-decoration: underline;
+    padding: 0.2rem 0;
+    color: ghostwhite;
+    text-shadow: 0.2rem 0.2rem black;
+    margin-top: 0.25rem;
 }
 
 /* CONTAINER */
@@ -38,9 +71,64 @@ img {
 }
 
 .game-flex-container {
-    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    align-items: flex-end;
+    margin-top: -5rem;
+    width: 150%;
+   grid-template-columns: 20% 60% 20%;
+   align-items: end;
+}
+
+#clear-board-button {
+    font-family: "BodonifIfRoman";
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+	box-shadow: 0 0.05rem 0.1rem gray;
+    border: none;
+    background-color: ghostwhite;
+}
+
+#game-button > a {
+    font-family: "BodonifIfRoman";
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+	box-shadow: 0 0.05rem 0.1rem gray;
+    border: none;
+    background-color: ghostwhite;
+}
+
+#remaining-turns > p, #scoreboard > p {
+    font-family: "BodonifIfRoman";
+    text-indent: 0;
+    font-size: 3rem;
+    border: 2px solid black;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    width: 20rem;
+}
+
+#game-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rupeeImage {
+    border: none;
+}
+
+@media (max-width: 1700px) {
+    h1 {
+        font-size: 4.9rem;
+    }
 }
